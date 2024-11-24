@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Rolls</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body> 
+        <div class="container">
+            <h1> Заказ и доставка суши и роллов</h1>
+            <form method="POST">
+                <!--  Имя  -->
+                <p class="name-surname">
+                    <label class="form-label" for="name">Имя</label>
+                    <input class="card-input" type="text" id="name" placeholder="Введите ваше имя" required>    
+                    <label class="form-label" for="surname">Фамилия</label>
+                    <input class="card-input" type="text" id="surname" placeholder="Введите вашу фамилию (необязательно для заполнения)">
+                </p>
+                <p class="name-surname">
+                    <label class="form-label" for="phone">Телефон</label>
+                    <input class="card-input" type="tel" id="phone" placeholder="+7 123 456 7890" required>    
+                    <label class="form-label" for="mail">Email</label>
+                    <input class="card-input" type="email" id="mail" placeholder="example@example.com" required>
+                </p>
+                <p class="name-surname">
+                    <label class="form-label" for="city">Г.</label>
+                    <input class="card-input" type="text" id="city" placeholder="Новосибирск" required>    
+                    <label class="form-label" for="street">Ул.</label>
+                    <input class="card-input" type="text" id="street" placeholder="Ленина" required>
+                    <label class="form-label" for="house">Д.</label>
+                    <input class="card-input" type="number" id="house" maxlength="4" placeholder="1" required>
+                    <label class="form-label" for="apartment">Кв.</label>
+                    <input class="card-input" type="number" id="apartment"  min="1" max="999" placeholder="1" required>
+                </p>
+
+                <p class="name-surname">
+                    <label class="form-label" for="stick">Количество палочек</label>
+                    <input class="card-input" type="number" id="stick" min="1" max="999" placeholder="1">    
+                    <span id="type-stick"> 
+                        <label  for="ordinary" >Обычные</label>
+                        <input type="radio" name="stick" id="ordinary">
+               
+                        <label  for="training" >Учебные</label>
+                        <input type="radio" name="stick" id="training">
+                
+                    </span>
+                </p>
+
+                <p class="name-surname">
+                    <label class="form-label" for="list-rolls">Доступные для заказа:</label>
+                    <!-- <input type="text" id="list-rolls" list="g" value="a"> -->
+                    <select id="g">
+                        <option>Филадельфия</option>
+                        <option>Филадельфия лайт</option>
+                        <option>Калифорния</option>
+                        <option>Калифорния лайт</option>
+                        <option>Унаги</option>
+                        <option>Темпура</option>
+                        <option>Дракон</option>
+                        <option>Сяки</option>
+                        <option>Маки</option>
+                        <option>Ролл с огурцом</option>
+                        <option>Маки</option>
+
+                    </select>
+                </p> 
+                <p class="name-surname">
+                    <span id="additional-options">
+                        <label for="servitte">Класть салфетки?</label>
+                        <input type="checkbox" name="servitte" id="check"> 
+                        <label for="vasabi">Васаби?</label>
+                        <input type="checkbox" name="vasabi" id="check"> 
+                        <label for="Imbir">Имбирь?</label>
+                        <input type="checkbox" name="Imbir" id="check"> 
+                    </span>
+                </p> 
+                <p class="name-surname">                        
+                    <label for="comm">Ваш комментарий к заказу</label>
+                    <textarea type="text" id = "comm" laceholder="Комментарий" rows="5" cols="100">
+                    </textarea> 
+                </p>
+                
+                <p class="name-surname">
+                    <input type="submit" value="Отправить заявку на заказ">
+                    <!-- Отвечает за отправку даннных на сервер -->
+                    <input type="reset" value="сбросить заказ">
+                    <!-- Очищать введенные данные -->
+
+                </p>
+
+
+ 
+            
+            </form>
+        </div>
+    </body>
+</html>

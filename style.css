@@ -1,0 +1,99 @@
+body{
+    background-image: url('img/back-rolls.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    width: 1200px;
+    height: 700px; 
+    background-color:white;
+    opacity: 0.95;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    padding: 30px;
+    position: relative;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    position: center;
+    width: 75%;
+    color: #3b565e;
+    margin: 10px;
+}
+
+h1{
+    width: 65%;
+    margin-left: 20%;
+    position: center;
+    transform: translateX(-50px);
+    background-color: #437C17;
+    padding: 15px 50px;
+    color: white;
+}
+
+.name-surname{
+    display:inline;
+    margin-left: 20%;
+}
+
+.form-label{
+    font-size: 18px;
+    margin: 15px 0 7px 0;
+}
+
+#surname{
+    width: 380px;
+}
+
+#city{
+    width: 100px;
+}
+
+#street{
+    width: 90px;
+}
+
+#house{
+    width: 60px;
+}
+
+#apartment{
+    width: 40px;
+}
+
+#type-stick{
+    display: inline;
+}
+
+#stick{
+    width: 40px;
+}
+
+.card-input{
+    height: 20px;
+    background-color: #addfad; 
+    border: 1px solid #1a2b1a;
+    padding: 0 3px;
+    transition: 0.5s;
+}
+
+
+.card-input::placeholder{
+    color:black;
+    transition:0.5s;
+}
+
+.card-input:focus::placeholder{
+    color:#556B2F;
+
+}
+
+.card-input:focus{
+    outline: none;
+    background-color: white;
+    transform: scale(1.5);
+}
